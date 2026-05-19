@@ -100,7 +100,7 @@ const App = () => {
             </div>
 
             <div className="w-full max-w-[391px]">
-              <img loading="eager" decoding="async" src={img1} alt="Business dashboard illustration" className="h-auto w-full object-contain" />
+              <img loading="eager" decoding="async" src={img1} alt="Business dashboard illustration" width={391} height={220} className="h-auto w-full object-contain" />
             </div>
           </div>
 
@@ -151,7 +151,7 @@ const App = () => {
 
         <section className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-4 pb-14 md:grid-cols-2 md:px-12">
           <div className="mx-auto w-full max-w-[420px]">
-            <img loading="lazy" decoding="async" src={img2} alt="Two people managing profile" className="h-auto w-full object-contain" />
+            <img loading="lazy" decoding="async" src={img2} alt="Two people managing profile" width={420} height={280} className="h-auto w-full object-contain" />
           </div>
           <div>
             <h3 className="text-[36px] font-semibold leading-tight text-[#4D4D4D]">The unseen of spending three years at Pixelgrade</h3>
@@ -187,7 +187,7 @@ const App = () => {
 
         <section className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-12">
           <div className="mx-auto w-full max-w-[420px]">
-            <img loading="lazy" decoding="async" src={img3} alt="Mobile footer design illustration" className="h-auto w-full object-contain" />
+            <img loading="lazy" decoding="async" src={img3} alt="Mobile footer design illustration" width={420} height={280} className="h-auto w-full object-contain" />
           </div>
           <div>
             <h3 className="text-4xl font-semibold leading-tight text-[#4D4D4D]">How to design your site footer like we did</h3>
@@ -201,7 +201,7 @@ const App = () => {
         <section className="bg-[#F5F7FA]">
           <div className="mx-auto grid w-full max-w-[1200px] gap-8 px-6 py-12 md:grid-cols-[320px_1fr] md:px-12">
             <div className="mx-auto aspect-square w-full max-w-[280px] overflow-hidden rounded-lg shadow-lg">
-              <img loading="lazy" decoding="async" src={img4} alt="Customer testimonial" className="h-full w-full object-cover" />
+              <img loading="lazy" decoding="async" src={img4} alt="Customer testimonial" width={280} height={280} className="h-full w-full object-cover" />
             </div>
             <div>
               <p className="text-sm leading-6 text-[#717171]">
@@ -235,7 +235,7 @@ const App = () => {
           <div className="mt-10 grid gap-10 md:grid-cols-3">
             {blogs.map((blog) => (
               <article key={blog.title} className="mx-auto w-full max-w-[368px]">
-                <img loading="lazy" decoding="async" src={blog.image} alt={blog.title} className="h-[286px] w-full rounded-[8px] object-cover" />
+                <img loading="lazy" decoding="async" src={blog.image} alt={blog.title} width={368} height={286} className="h-[286px] w-full rounded-[8px] object-cover" />
                 <div className="relative z-10 mx-auto -mt-[96px] w-[calc(100%-16px)] max-w-[317px] rounded-[8px] bg-[#F5F7FA] px-4 pb-6 pt-4 text-center shadow-[0_8px_16px_rgba(171,190,209,0.4)] sm:px-6">
                   <p className="whitespace-pre-line text-[18px] font-semibold leading-[28px] text-[#717171]">{blog.title}</p>
                   <a href="#" className="mt-4 inline-flex items-center gap-2 text-[18px] font-semibold leading-[28px] text-[#4CAF4F]">
@@ -263,40 +263,40 @@ const App = () => {
             <p className="mt-6 text-[14px] leading-[20px] text-[#D9DBE1]">Copyright © 2020 Nexcent ltd.</p>
             <p className="mt-2 text-[14px] leading-[20px] text-[#D9DBE1]">All rights reserved</p>
             <div className="mt-6 flex justify-center md:justify-start items-center gap-4 text-sm text-white/90">
-              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaInstagram /></a>
-              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaDribbble /></a>
-              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaTwitter /></a>
-              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaYoutube /></a>
+              <a href="#" aria-label="Instagram" className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20 focus:ring-2 focus:ring-[#4CAF4F] focus:outline-none"><FaInstagram /></a>
+              <a href="#" aria-label="Dribbble" className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20 focus:ring-2 focus:ring-[#4CAF4F] focus:outline-none"><FaDribbble /></a>
+              <a href="#" aria-label="Twitter" className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20 focus:ring-2 focus:ring-[#4CAF4F] focus:outline-none"><FaTwitter /></a>
+              <a href="#" aria-label="YouTube" className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20 focus:ring-2 focus:ring-[#4CAF4F] focus:outline-none"><FaYoutube /></a>
             </div>
           </div>
 
           <div className="pt-1 text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Company</h4>
             <ul className="mt-4 space-y-3 text-[14px] leading-[20px] text-[#D9DBE1]">
-              <li><a href="#" className="hover:text-white">About us</a></li>
-              <li><a href="#" className="hover:text-white">Blog</a></li>
-              <li><a href="#" className="hover:text-white">Contact us</a></li>
-              <li><a href="#" className="hover:text-white">Pricing</a></li>
-              <li><a href="#" className="hover:text-white">Testimonials</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">About us</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Blog</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Contact us</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Pricing</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Testimonials</a></li>
             </ul>
           </div>
 
           <div className="pt-1 text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Support</h4>
             <ul className="mt-4 space-y-3 text-[14px] leading-[20px] text-[#D9DBE1]">
-              <li><a href="#" className="hover:text-white">Help center</a></li>
-              <li><a href="#" className="hover:text-white">Terms of service</a></li>
-              <li><a href="#" className="hover:text-white">Legal</a></li>
-              <li><a href="#" className="hover:text-white">Privacy policy</a></li>
-              <li><a href="#" className="hover:text-white">Status</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Help center</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Terms of service</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Legal</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Privacy policy</a></li>
+              <li><a href="#" className="hover:text-white focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]">Status</a></li>
             </ul>
           </div>
 
           <div className="text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Stay up to date</h4>
               <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-2 justify-center md:justify-start w-full">
-                <input type="email" placeholder="Your email address" className="w-full sm:flex-1 max-w-[320px] md:max-w-[255px] lg:max-w-[320px] rounded-lg bg-[#515B60] px-4 py-2 text-[14px] text-[#D9DBE1] placeholder-[#BCC2C6] focus:outline-none" />
-                <button className="inline-flex mt-2 sm:mt-0 h-10 w-10 items-center justify-center rounded bg-[#4CAF4F] text-white hover:bg-[#3e8b3f]">
+                <input name="email" aria-label="Email address" type="email" placeholder="Your email address" className="w-full sm:flex-1 max-w-[320px] md:max-w-[255px] lg:max-w-[320px] rounded-lg bg-[#515B60] px-4 py-2 text-[14px] text-[#D9DBE1] placeholder-[#BCC2C6] focus:outline-none focus:ring-2 focus:ring-[#4CAF4F]" />
+                <button aria-label="Subscribe" className="inline-flex mt-2 sm:mt-0 h-10 w-10 min-w-[40px] items-center justify-center rounded bg-[#4CAF4F] text-white hover:bg-[#3e8b3f] focus:ring-2 focus:ring-[#387a36] focus:outline-none">
                   <RiTelegram2Line className="h-4 w-4" />
                 </button>
               </div>

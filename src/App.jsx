@@ -254,49 +254,51 @@ const App = () => {
       </main>
 
       <footer className="bg-[#263238] px-4 py-16 text-white md:px-12">
-        <div className="mx-auto grid w-full max-w-[1200px] gap-10 md:grid-cols-4">
-          <div>
-            <div className="flex items-center gap-2">
+        <div className="mx-auto grid w-full max-w-[1200px] gap-8 items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-[350px_1fr_1fr_320px]">
+          <div className="text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2">
               <MainLogo />
-              <span className="text-[40px] font-bold leading-[44px]">Nexcent</span>
+              <span className="text-2xl font-bold leading-6 text-white">Nexcent</span>
             </div>
-            <p className="mt-7 text-[14px] leading-[20px] text-[#D9DBE1]">Copyright © 2020 Nexcent ltd.</p>
+            <p className="mt-6 text-[14px] leading-[20px] text-[#D9DBE1]">Copyright © 2020 Nexcent ltd.</p>
             <p className="mt-2 text-[14px] leading-[20px] text-[#D9DBE1]">All rights reserved</p>
-            <div className="mt-8 flex items-center gap-4 text-sm text-white/90">
-              <span className="flex h-[32px] w-[32px] items-center justify-center rounded-full bg-white/10 text-[#F5F7FA]"><FaInstagram /></span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA]"><FaDribbble /></span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA]"><FaTwitter /></span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA]"><FaYoutube /></span>
+            <div className="mt-6 flex justify-center md:justify-start items-center gap-4 text-sm text-white/90">
+              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaInstagram /></a>
+              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaDribbble /></a>
+              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaTwitter /></a>
+              <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#F5F7FA] hover:bg-white/20"><FaYoutube /></a>
             </div>
           </div>
 
-          <div>
+          <div className="pt-1 text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Company</h4>
-            <ul className="mt-6 space-y-3 text-[14px] leading-[20px] text-[#F5F7FA]">
-              <li>About us</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-              <li>Pricing</li>
-              <li>Testimonials</li>
+            <ul className="mt-4 space-y-3 text-[14px] leading-[20px] text-[#D9DBE1]">
+              <li><a href="#" className="hover:text-white">About us</a></li>
+              <li><a href="#" className="hover:text-white">Blog</a></li>
+              <li><a href="#" className="hover:text-white">Contact us</a></li>
+              <li><a href="#" className="hover:text-white">Pricing</a></li>
+              <li><a href="#" className="hover:text-white">Testimonials</a></li>
             </ul>
           </div>
 
-          <div>
+          <div className="pt-1 text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Support</h4>
-            <ul className="mt-6 space-y-3 text-[14px] leading-[20px] text-[#F5F7FA]">
-              <li>Help center</li>
-              <li>Terms of service</li>
-              <li>Legal</li>
-              <li>Privacy policy</li>
-              <li>Status</li>
+            <ul className="mt-4 space-y-3 text-[14px] leading-[20px] text-[#D9DBE1]">
+              <li><a href="#" className="hover:text-white">Help center</a></li>
+              <li><a href="#" className="hover:text-white">Terms of service</a></li>
+              <li><a href="#" className="hover:text-white">Legal</a></li>
+              <li><a href="#" className="hover:text-white">Privacy policy</a></li>
+              <li><a href="#" className="hover:text-white">Status</a></li>
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-[20px] font-semibold leading-[28px]">Stay up to date</h4>
-              <div className="mt-6 flex h-10 w-full max-w-[255px] items-center justify-between rounded-lg bg-[#515B60] px-3 text-[14px] leading-[20px] text-[#D9DBE1] sm:px-4">
-                <span className="leading-none">Your email address</span>
-                <RiTelegram2Line className="h-4 w-4 shrink-0 text-[#F5F7FA]" />
+              <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-2 justify-center md:justify-start w-full">
+                <input type="email" placeholder="Your email address" className="w-full sm:flex-1 max-w-[320px] md:max-w-[255px] lg:max-w-[320px] rounded-lg bg-[#515B60] px-4 py-2 text-[14px] text-[#D9DBE1] placeholder-[#BCC2C6] focus:outline-none" />
+                <button className="inline-flex mt-2 sm:mt-0 h-10 w-10 items-center justify-center rounded bg-[#4CAF4F] text-white hover:bg-[#3e8b3f]">
+                  <RiTelegram2Line className="h-4 w-4" />
+                </button>
               </div>
           </div>
         </div>
